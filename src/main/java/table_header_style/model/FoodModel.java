@@ -11,23 +11,23 @@ public class FoodModel {
 		this(null, "");
 	}
 
-	public FoodModel(Long id, String name) {
+	public FoodModel(Integer id, String name) {
 		this.id = new SimpleObjectProperty<>(id);
 		this.name = new SimpleStringProperty(name);
 	}
 
-	private ObjectProperty<Long> id;
+	private ObjectProperty<Integer> id;
 	private StringProperty name;
 
-	public Long getId() {
+	public Integer getId() {
 		return id.get();
 	}
 
-	public ObjectProperty<Long> idProperty() {
+	public ObjectProperty<Integer> idProperty() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id.set(id);
 	}
 
