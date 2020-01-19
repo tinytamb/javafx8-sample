@@ -1,0 +1,14 @@
+.root {
+	-fx-my-color: #fcf3af;
+}
+
+/* column-header */
+.table-view .column-header.myHeader {
+	-fx-background-color: -fx-box-border, -fx-inner-border, linear-gradient(to bottom,
+	ladder(
+			-fx-my-color,
+			derive(-fx-my-color, 8%) 75%,
+			derive(-fx-my-color, 10%) 80%
+	),
+	derive(-fx-my-color, -8%));
+}
